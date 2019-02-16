@@ -4,6 +4,7 @@ target 'AppExample' do
   use_frameworks!
   pod 'Alamofire'
   pod 'Realm'
-  pod 'RxSwift'
+  pod 'RxSwift',    '~> 4.0'
+  pod 'RxCocoa',    '~> 4.0'
   pod 'SnapKit'
 end
