@@ -14,6 +14,12 @@
 		A893D6142217CE310097C487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A893D6122217CE310097C487 /* LaunchScreen.storyboard */; };
 		A893D61F2217CE310097C487 /* AppExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D61E2217CE310097C487 /* AppExampleTests.swift */; };
 		A893D62A2217CE310097C487 /* AppExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D6292217CE310097C487 /* AppExampleUITests.swift */; };
+		A893D66E221821D60097C487 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D66D221821D60097C487 /* UILabel+Extension.swift */; };
+		A893D672221822AF0097C487 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A893D671221822AF0097C487 /* Raleway-Bold.ttf */; };
+		A893D674221822B80097C487 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A893D673221822B80097C487 /* Raleway-Regular.ttf */; };
+		A893D677221823A60097C487 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D676221823A60097C487 /* StyleGuide.swift */; };
+		A893D6782218250E0097C487 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A893D675221822BE0097C487 /* Raleway-Light.ttf */; };
+		A893D67A221825E70097C487 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D679221825E70097C487 /* UIColor+Extension.swift */; };
 		FB5E398F62C2D993AD1FD643 /* Pods_AppExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDFED0C77907CAE4ECFCBB7 /* Pods_AppExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +57,12 @@
 		A893D6252217CE310097C487 /* AppExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A893D6292217CE310097C487 /* AppExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExampleUITests.swift; sourceTree = "<group>"; };
 		A893D62B2217CE310097C487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A893D66D221821D60097C487 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		A893D671221822AF0097C487 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		A893D673221822B80097C487 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		A893D675221822BE0097C487 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		A893D676221823A60097C487 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
+		A893D679221825E70097C487 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +133,10 @@
 		A893D6082217CE300097C487 /* AppExample */ = {
 			isa = PBXGroup;
 			children = (
+				A893D63D2217FF160097C487 /* Library */,
+				A893D63E2217FF470097C487 /* Models */,
+				A893D66F221822900097C487 /* Resources */,
+				A893D6372217FEDE0097C487 /* Views */,
 				A893D6092217CE300097C487 /* AppDelegate.swift */,
 				A893D60B2217CE300097C487 /* ViewController.swift */,
 				A893D60D2217CE300097C487 /* Main.storyboard */,
@@ -147,6 +163,72 @@
 				A893D62B2217CE310097C487 /* Info.plist */,
 			);
 			path = AppExampleUITests;
+			sourceTree = "<group>";
+		};
+		A893D6372217FEDE0097C487 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A893D6402217FF690097C487 /* Cells */,
+				A893D63F2217FF520097C487 /* Controllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A893D63D2217FF160097C487 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A893D66C221821C50097C487 /* Extensions */,
+				A893D676221823A60097C487 /* StyleGuide.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		A893D63E2217FF470097C487 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A893D63F2217FF520097C487 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A893D6402217FF690097C487 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A893D66C221821C50097C487 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A893D66D221821D60097C487 /* UILabel+Extension.swift */,
+				A893D679221825E70097C487 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A893D66F221822900097C487 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A893D670221822A30097C487 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A893D670221822A30097C487 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A893D671221822AF0097C487 /* Raleway-Bold.ttf */,
+				A893D673221822B80097C487 /* Raleway-Regular.ttf */,
+				A893D675221822BE0097C487 /* Raleway-Light.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +338,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A893D6142217CE310097C487 /* LaunchScreen.storyboard in Resources */,
+				A893D674221822B80097C487 /* Raleway-Regular.ttf in Resources */,
 				A893D6112217CE310097C487 /* Assets.xcassets in Resources */,
+				A893D6782218250E0097C487 /* Raleway-Light.ttf in Resources */,
 				A893D60F2217CE300097C487 /* Main.storyboard in Resources */,
+				A893D672221822AF0097C487 /* Raleway-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,8 +424,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A893D66E221821D60097C487 /* UILabel+Extension.swift in Sources */,
 				A893D66922180C480097C487 /* TableHeaderView.swift in Sources */,
 				A893D60A2217CE300097C487 /* AppDelegate.swift in Sources */,
+				A893D67A221825E70097C487 /* UIColor+Extension.swift in Sources */,
+				A893D677221823A60097C487 /* StyleGuide.swift in Sources */,
 				A893D63B2217FF020097C487 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
