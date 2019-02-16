@@ -1,0 +1,9 @@
+platform :ios, '12.1'
+
+target 'AppExample' do
+  use_frameworks!
+  pod 'Alamofire'
+  pod 'Realm'
+  pod 'RxSwift'
+  pod 'SnapKit'
+end
