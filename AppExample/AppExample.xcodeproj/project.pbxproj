@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		A893D60A2217CE300097C487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D6092217CE300097C487 /* AppDelegate.swift */; };
-		A893D60C2217CE300097C487 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D60B2217CE300097C487 /* ViewController.swift */; };
 		A893D60F2217CE300097C487 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A893D60D2217CE300097C487 /* Main.storyboard */; };
 		A893D6112217CE310097C487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A893D6102217CE310097C487 /* Assets.xcassets */; };
 		A893D6142217CE310097C487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A893D6122217CE310097C487 /* LaunchScreen.storyboard */; };
 		A893D61F2217CE310097C487 /* AppExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D61E2217CE310097C487 /* AppExampleTests.swift */; };
 		A893D62A2217CE310097C487 /* AppExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D6292217CE310097C487 /* AppExampleUITests.swift */; };
+		A893D63B2217FF020097C487 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D63A2217FF020097C487 /* WelcomeViewController.swift */; };
+		A893D66922180C480097C487 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D66822180C480097C487 /* TableHeaderView.swift */; };
 		A893D66E221821D60097C487 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D66D221821D60097C487 /* UILabel+Extension.swift */; };
 		A893D672221822AF0097C487 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A893D671221822AF0097C487 /* Raleway-Bold.ttf */; };
 		A893D674221822B80097C487 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A893D673221822B80097C487 /* Raleway-Regular.ttf */; };
 		A893D677221823A60097C487 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D676221823A60097C487 /* StyleGuide.swift */; };
 		A893D6782218250E0097C487 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A893D675221822BE0097C487 /* Raleway-Light.ttf */; };
 		A893D67A221825E70097C487 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D679221825E70097C487 /* UIColor+Extension.swift */; };
+		A893D68022192E990097C487 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A893D68222192E990097C487 /* Localizable.strings */; };
 		FB5E398F62C2D993AD1FD643 /* Pods_AppExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDFED0C77907CAE4ECFCBB7 /* Pods_AppExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +48,6 @@
 		A009D82A41DB2D8DF2C01529 /* Pods-AppExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppExample.debug.xcconfig"; path = "Target Support Files/Pods-AppExample/Pods-AppExample.debug.xcconfig"; sourceTree = "<group>"; };
 		A893D6062217CE300097C487 /* AppExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A893D6092217CE300097C487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A893D60B2217CE300097C487 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A893D60E2217CE300097C487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A893D6102217CE310097C487 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A893D6132217CE310097C487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,12 +58,18 @@
 		A893D6252217CE310097C487 /* AppExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A893D6292217CE310097C487 /* AppExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExampleUITests.swift; sourceTree = "<group>"; };
 		A893D62B2217CE310097C487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A893D63A2217FF020097C487 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		A893D66822180C480097C487 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
 		A893D66D221821D60097C487 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		A893D671221822AF0097C487 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
 		A893D673221822B80097C487 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		A893D675221822BE0097C487 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
 		A893D676221823A60097C487 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
 		A893D679221825E70097C487 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A893D67C22192E430097C487 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Main.strings"; sourceTree = "<group>"; };
+		A893D67D22192E440097C487 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		A893D68122192E990097C487 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A893D68322192E9C0097C487 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,11 +141,11 @@
 			isa = PBXGroup;
 			children = (
 				A893D63D2217FF160097C487 /* Library */,
+				A893D67B22192D740097C487 /* Locales */,
 				A893D63E2217FF470097C487 /* Models */,
 				A893D66F221822900097C487 /* Resources */,
 				A893D6372217FEDE0097C487 /* Views */,
 				A893D6092217CE300097C487 /* AppDelegate.swift */,
-				A893D60B2217CE300097C487 /* ViewController.swift */,
 				A893D60D2217CE300097C487 /* Main.storyboard */,
 				A893D6102217CE310097C487 /* Assets.xcassets */,
 				A893D6122217CE310097C487 /* LaunchScreen.storyboard */,
@@ -170,6 +177,7 @@
 			children = (
 				A893D6402217FF690097C487 /* Cells */,
 				A893D63F2217FF520097C487 /* Controllers */,
+				A893D66822180C480097C487 /* TableHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,6 +201,7 @@
 		A893D63F2217FF520097C487 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A893D63A2217FF020097C487 /* WelcomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -229,6 +238,14 @@
 				A893D675221822BE0097C487 /* Raleway-Light.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A893D67B22192D740097C487 /* Locales */ = {
+			isa = PBXGroup;
+			children = (
+				A893D68222192E990097C487 /* Localizable.strings */,
+			);
+			path = Locales;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +336,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-MX",
 			);
 			mainGroup = A893D5FD2217CE300097C487;
 			productRefGroup = A893D6072217CE300097C487 /* Products */;
@@ -340,6 +358,7 @@
 				A893D6142217CE310097C487 /* LaunchScreen.storyboard in Resources */,
 				A893D674221822B80097C487 /* Raleway-Regular.ttf in Resources */,
 				A893D6112217CE310097C487 /* Assets.xcassets in Resources */,
+				A893D68022192E990097C487 /* Localizable.strings in Resources */,
 				A893D6782218250E0097C487 /* Raleway-Light.ttf in Resources */,
 				A893D60F2217CE300097C487 /* Main.storyboard in Resources */,
 				A893D672221822AF0097C487 /* Raleway-Bold.ttf in Resources */,
@@ -469,6 +488,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A893D60E2217CE300097C487 /* Base */,
+				A893D67C22192E430097C487 /* es-MX */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -477,8 +497,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				A893D6132217CE310097C487 /* Base */,
+				A893D67D22192E440097C487 /* es-MX */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A893D68222192E990097C487 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A893D68122192E990097C487 /* en */,
+				A893D68322192E9C0097C487 /* es-MX */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -488,6 +518,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -549,6 +580,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
