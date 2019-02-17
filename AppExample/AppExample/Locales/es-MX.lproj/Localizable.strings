@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  AppExample
+
+  Created by Luis Fernando Mata on 2/17/19.
+  Copyright © 2019 Fernando. All rights reserved.
+*/
+"FullName" = "Luis Fernando Mata Licón";
+"Headline" = "Desarrollador Swift";
