@@ -1,0 +1,143 @@
+{
+  "experience": [
+    {
+     "name" : "Imagination",
+     "logo" : "ImagLogo",
+     "role" : "Digital Developer",
+     "joinedAt" : "2018-07-25T00:00:00+0000",
+     "current" : true,
+     "location" : "Shanghai, China",
+     "mainSkills" : [
+          "Swift 4",
+          "iOS Development",
+          "User Interface",
+          "Realm",
+          "RxSwift",
+          "Scrum",
+          "MVVM",
+          "Alamofire",
+          "SnapKit",
+          "Cocoapods",
+          "SceneKit",
+          "Facebook pop",
+          "Git",
+          "BitBucket"
+       ],
+       "description" : "I joined Imagination in July 2017 and I’m working at the Shanghai office.\nI’m part of the digital team and I’m in charge of developing apps for iPhone and iPad based on the projects needs.\nI work creating an iPad app for a big automotive company that is used in three different countries in South East Asia. I’m working mainly with Swift 4. We also use RxSwift to create a reactive app that can quickly adapt to the user interaction depending on the needs identified by our team and client. We choose RxSwift to follow the MVVM pattern through the whole app, which let us change models and views easily without depending too much on the other.\nThe app is being used by thousands of users and is localized for three different markets, including changes in UI and language localization.\nI’m in charge of creating the user interface of the app, using interface builder and code, to create and manage constraints to meet a UI adjusted to what the designer teams created and responsive enough to change to the user needs. in order to achieve the best results, we mainly use SnapKit to create the user interface, and pop and UIViewAnimation to deliver a smooth experience to the user.\nWe also use other common libraries such as AlamoFire, Moya, Crashlytics, Realm, ObjectMapper, among others.",
+       "companyInformation" : {
+         "name" : "Imagination",
+         "description" : "Imagination is a global creative agency with offices in Europe, Asia, Australia, the Americas, and the Middle East, focused mainly on delivering great experiences and brand engagement for clients in the world. Mostly focused on automotive brands like Jaguar, Ford, Rolls-Royce and more; but also with clients from different industries like MLB, Shell, Guinness, and Prada.",
+         "website" : "https://imagination.com"
+       },
+       "appsDeveloped" : [
+         {
+         "name" : "Ford DSG",
+         "description" : "Ford DSG is an app that helps Ford dealers in South East Asia and the Pacific to give a better experience to their clients.\nUsed in five different countries, Ford clients are able to go through the whole journey of selecting, configuring, testing and buying a new vehicle.",
+         "platform" : "iPad",
+         "users" : "10000+",
+         "os" : "iOS 10.1>",
+         "language" : "Swift 4",
+         "technologies" : [
+           "Realm",
+            "RxSwift",
+            "Scrum",
+            "MVVM",
+            "Alamofire",
+            "SnapKit",
+            "Facebook pop"
+           ]
+       }
+       ]
+    },
+    {
+     "name" : "ReignDesign",
+     "logo" : "ReignLogo",
+     "role" : "iOS Developer",
+     "joinedAt" : "2015-11-30T00:00:00+0000",
+     "leftAt" : "2018-07-21T00:00:00+0000",
+     "current" : false,
+     "location" : "Remote/Shanghai, China",
+     "mainSkills" : [
+          "Swift 3",
+          "iOS Development",
+          "User Interface",
+          "Realm",
+          "AFNetworking",
+          "Scrum",
+          "MVC",
+          "Alamofire",
+          "MapKit",
+          "Git",
+          "GitHub"
+       ],
+       "description" : "I joined ReignDesign in December 2015 and worked remotely from Mexico until I moved to Shanghai office in September 2016 where I stayed until July 2017. I worked as an iOS Developer working mainly with Swift.\nDuring my time at ReignDesign, I worked directly from the beginning on the development of a mobile app for one of the biggest insurance companies in South America. The project started focused on the Chilean market but quickly grew to cover Colombia, Peru, and Argentina.\nI worked developing the iPhone project using Swift 2.2 and Swift 3. The project used Cocoapods to manage external libraries and used a REST API to get information from the cloud. We used git as version control and Scrum for the project management. One of the apps I worked on used rela time GPS service to locate tow trucks near the user, showing their position in a map and the route they were taking to arrive to the users location.\nI worked remotely for nine months from my hometown in Chihuahua, Mexico. And after that, I moved to Shanghai, China where I worked mostly on site. I occasionally wrote on the company’s blog about my experience moving to China.",
+       "companyInformation" : {
+         "name" : "ReignDesign",
+         "description" : "ReignDesign is a multicultural creative agency with offices in Shanghai, Santiago, Barcelona and Bangkok; and people from all over the world. They develop mobile apps and mobile cloud solutions to clients like BMW, Citroën, CMR Falabella, Hyperloop One and Nike.",
+         "website" : "https://reigndesign.com"
+       },
+       "appsDeveloped" : [
+         {
+         "name" : "Seguros Falabella",
+         "description" : "Seguros Falabella is one of the biggest insurance companies in South America. They created an app to deliver a better service to their clients, offering services like gas stations locator, call a tow truck in case you needed one, see their insurance policy if needed, create an accident report with real time photos an videos.\nThe app had a service where the user was able to call a tow truck and see their position in real time, with the route it was taking and an estimation of time to arrive.",
+         "platform" : "iPhone",
+         "users" : "1000+",
+         "os" : "iOS 8.0>",
+         "language" : "Swift 2",
+         "technologies" : [
+           "Realm",
+            "MapKit",
+            "Scrum",
+            "AFNetworking",
+            "Crashlytics",
+            "MVC",
+            "Alamofire"
+           ]
+       },
+       {
+         "name" : "Banco Falabella",
+         "description" : "Banco Falabella created an app to reward their most loyal users. The app had different sections to buy things using their cards points, and also to locate places around them that offered benefits to Falabella cardholders",
+         "platform" : "iPhone",
+         "users" : "1000+",
+         "os" : "iOS 8.0>",
+         "language" : "Swift 2",
+         "technologies" : [
+           "Realm",
+            "MapKit",
+            "Scrum",
+            "AFNetworking",
+            "Crashlytics",
+            "MVC",
+            "Alamofire"
+           ]
+       }
+      ]
+    },
+    {
+     "name" : "Intelectix",
+     "logo" : "IntelectixLogo",
+     "role" : "Product Manager",
+     "joinedAt" : "2014-07-07T00:00:00+0000",
+     "leftAt" : "2015-11-27T00:00:00+0000",
+     "current" : false,
+     "location" : "Chihuahua, Mexico",
+     "mainSkills" : [
+          "Scrum",
+          "JIRA",
+          "Basecamp",
+          "Requirements Gathering",
+          "Google Analytics",
+          "Team management",
+          "Project Management",
+          "Product Development"
+       ],
+       "description" : "From July 2014 to November 2015, I worked as a Product and Project Manager at Intelectix. I was in charge of gathering the client’s requirements, designing software solutions and presenting them to the client. Once the client accepted the project, I was in charge of the management of the project leading the development team and working as the bridge between the company and the clients.\nFor the same nature of the projects, an agile development method needed to be implemented when I joined the company. We chose Scrum for managing the projects, where I was in charge of the Product Owner role. We used JIRA as the platform to keep track of the development process.\nDuring my time at Intelectix, we delivered successfully over seven products, I was in charge of the process of requirements gathering, project presentation, project management, and product delivery. The products were from a different range of industries including manufacturing, sales, finances, banking, and transportation.",
+       "companyInformation" : {
+         "name" : "Intelectix",
+         "description" : "Intelectix is a software development company located in Chihuahua, Mexico. They work with different kind of industries providing custom software solutions depending on the client’s needs, for local and international clients.",
+         "website" : "https://intelectix.com"
+       },
+       "appsDeveloped" : []
+    }
+  ]
+}
