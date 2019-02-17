@@ -9,11 +9,19 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-    
-    
     @IBOutlet weak var tableView: UITableView!
     private var headerView: TableHeaderView!
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return internalPreferredStatusBarStyle
+    }
+    
+    private var internalPreferredStatusBarStyle: UIStatusBarStyle = .default {
+        didSet {
+            setNeedsStatusBarAppearanceUpdate()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,6 +29,7 @@ class WelcomeViewController: UIViewController {
     }
     
     private func createUI() {
+        internalPreferredStatusBarStyle = .lightContent
         navigationController?.setNavigationBarHidden(true, animated: false)
         headerView = TableHeaderView()
         tableView.tableHeaderView = headerView
@@ -48,6 +57,8 @@ extension WelcomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = UITableViewCell()
+        cell.backgroundColor = .white
+        return cell
     }
 }
