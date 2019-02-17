@@ -22,6 +22,7 @@
 		A893D6782218250E0097C487 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A893D675221822BE0097C487 /* Raleway-Light.ttf */; };
 		A893D67A221825E70097C487 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D679221825E70097C487 /* UIColor+Extension.swift */; };
 		A893D68022192E990097C487 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A893D68222192E990097C487 /* Localizable.strings */; };
+		A893D6862219BB800097C487 /* Experience.json in Resources */ = {isa = PBXBuildFile; fileRef = A893D6882219BB800097C487 /* Experience.json */; };
 		FB5E398F62C2D993AD1FD643 /* Pods_AppExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDFED0C77907CAE4ECFCBB7 /* Pods_AppExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,8 @@
 		A893D67D22192E440097C487 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		A893D68122192E990097C487 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A893D68322192E9C0097C487 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A893D6872219BB800097C487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Experience.json; sourceTree = "<group>"; };
+		A893D6892219BB830097C487 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-MX"; path = "es-MX.lproj/Experience.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +228,7 @@
 		A893D66F221822900097C487 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A893D6882219BB800097C487 /* Experience.json */,
 				A893D670221822A30097C487 /* Fonts */,
 			);
 			path = Resources;
@@ -362,6 +366,7 @@
 				A893D6782218250E0097C487 /* Raleway-Light.ttf in Resources */,
 				A893D60F2217CE300097C487 /* Main.storyboard in Resources */,
 				A893D672221822AF0097C487 /* Raleway-Bold.ttf in Resources */,
+				A893D6862219BB800097C487 /* Experience.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +514,15 @@
 				A893D68322192E9C0097C487 /* es-MX */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		A893D6882219BB800097C487 /* Experience.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A893D6872219BB800097C487 /* Base */,
+				A893D6892219BB830097C487 /* es-MX */,
+			);
+			name = Experience.json;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
