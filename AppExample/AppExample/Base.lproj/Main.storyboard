@@ -24,6 +24,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mxn-MR-TJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="34" y="64"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="uaF-jw-3SV">
@@ -33,9 +34,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Jrv-vw-9cA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ek-rc-Eaq">
+                                <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qFA-yZ-Fw1">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="fpF-WM-pCs" id="R4V-kT-1iy"/>
                                     <outlet property="delegate" destination="fpF-WM-pCs" id="B2G-5p-Vda"/>
@@ -44,7 +52,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="pfk-oq-Iga" firstAttribute="trailing" secondItem="7Ek-rc-Eaq" secondAttribute="trailing" id="1aw-GP-VEW"/>
+                            <constraint firstItem="Jrv-vw-9cA" firstAttribute="top" secondItem="81d-BC-t1j" secondAttribute="top" id="ECA-Dc-LfG"/>
+                            <constraint firstItem="7Ek-rc-Eaq" firstAttribute="height" secondItem="81d-BC-t1j" secondAttribute="height" multiplier="0.5" id="FnM-uu-AB3"/>
+                            <constraint firstItem="Jrv-vw-9cA" firstAttribute="leading" secondItem="pfk-oq-Iga" secondAttribute="leading" id="Tyq-NZ-uGm"/>
                             <constraint firstItem="pfk-oq-Iga" firstAttribute="bottom" secondItem="qFA-yZ-Fw1" secondAttribute="bottom" id="WWE-iy-Pdu"/>
+                            <constraint firstItem="Jrv-vw-9cA" firstAttribute="trailing" secondItem="pfk-oq-Iga" secondAttribute="trailing" id="WkJ-O8-ER1"/>
+                            <constraint firstItem="pfk-oq-Iga" firstAttribute="bottom" secondItem="7Ek-rc-Eaq" secondAttribute="bottom" id="aPn-hk-SlB"/>
+                            <constraint firstItem="7Ek-rc-Eaq" firstAttribute="leading" secondItem="pfk-oq-Iga" secondAttribute="leading" id="dhC-7W-D27"/>
                             <constraint firstItem="qFA-yZ-Fw1" firstAttribute="leading" secondItem="pfk-oq-Iga" secondAttribute="leading" id="gYj-v8-mXm"/>
                             <constraint firstItem="pfk-oq-Iga" firstAttribute="trailing" secondItem="qFA-yZ-Fw1" secondAttribute="trailing" id="kET-KP-Esy"/>
                             <constraint firstItem="qFA-yZ-Fw1" firstAttribute="top" secondItem="pfk-oq-Iga" secondAttribute="top" id="oD0-ad-kE9"/>
@@ -58,7 +73,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Tz-9O-Xjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="847" y="65"/>
+            <point key="canvasLocation" x="846.85212298682279" y="64.453125"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background" width="1500" height="724"/>
+    </resources>
 </document>

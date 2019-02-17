@@ -12,6 +12,7 @@ import SnapKit
 class TableHeaderView: UIView {
     
     private var contentView: UIView!
+    private var whiteBackground: UIView!
     private var photoImageView: UIImageView!
     private var labelsStackView: UIStackView!
     private var nameLabel: UILabel!
@@ -45,35 +46,49 @@ class TableHeaderView: UIView {
             make.edges.equalToSuperview()
         }
         
+        whiteBackground = UIView()
+        whiteBackground.backgroundColor = .white
+        contentView.addSubview(whiteBackground)
+        
         photoImageView = UIImageView()
+        photoImageView.image = UIImage(named: "Fernando Photo")
+        photoImageView.contentMode = .scaleAspectFill
+        photoImageView.layer.borderColor = UIColor.aeFlatGrey.cgColor
+        photoImageView.layer.borderWidth = 2
+        photoImageView.layer.masksToBounds = true
+        photoImageView.layer.cornerRadius = 60
         photoImageView.contentMode = .scaleAspectFill
         contentView.addSubview(photoImageView)
         photoImageView.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview().dividedBy(0.5)
-            make.size.equalTo(50)
+            make.top.equalToSuperview().inset(100)
+            make.size.equalTo(120)
         }
         
-        labelsStackView = UIStackView()
-        labelsStackView.alignment = .center
-        labelsStackView.spacing = 2
-        labelsStackView.distribution = .equalSpacing
-        labelsStackView.axis = .vertical
-        contentView.addSubview(labelsStackView)
-        labelsStackView.snp.makeConstraints { (make) in
-            make.centerY.equalToSuperview()
-            make.bottom.equalToSuperview().inset(16)
-            make.right.left.equalToSuperview().inset(10)
+        whiteBackground.snp.makeConstraints { (make) in
+            make.left.bottom.right.equalToSuperview()
+            make.top.equalTo(photoImageView.snp.centerY)
         }
         
         nameLabel = UILabel()
         nameLabel.text = NSLocalizedString("FullName", comment: "")
-        labelsStackView.addArrangedSubview(nameLabel)
         
         headlineLabel = UILabel()
         headlineLabel.text = NSLocalizedString("Headline", comment: "")
         headlineLabel.numberOfLines = 0
-        labelsStackView.addArrangedSubview(headlineLabel)
+        
+        labelsStackView = UIStackView(arrangedSubviews: [nameLabel,
+                                                         headlineLabel])
+        labelsStackView.alignment = .center
+        labelsStackView.spacing = 2
+        labelsStackView.distribution = .fill
+        labelsStackView.axis = .vertical
+        contentView.addSubview(labelsStackView)
+        labelsStackView.snp.makeConstraints { (make) in
+            make.top.equalTo(photoImageView.snp.bottom).offset(2)
+            make.bottom.equalToSuperview().inset(16).priority(900)
+            make.right.left.equalToSuperview().inset(10)
+        }
     }
     
     private func bindStyles() {
