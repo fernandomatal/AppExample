@@ -23,6 +23,9 @@
 		A893D67A221825E70097C487 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D679221825E70097C487 /* UIColor+Extension.swift */; };
 		A893D68022192E990097C487 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A893D68222192E990097C487 /* Localizable.strings */; };
 		A893D6862219BB800097C487 /* Experience.json in Resources */ = {isa = PBXBuildFile; fileRef = A893D6882219BB800097C487 /* Experience.json */; };
+		A893D68D221AC64C0097C487 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D68C221AC64C0097C487 /* Experience.swift */; };
+		A893D68F221AC8E00097C487 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D68E221AC8E00097C487 /* Date+Extension.swift */; };
+		A893D691221AFFBA0097C487 /* ExperienceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D690221AFFBA0097C487 /* ExperienceManager.swift */; };
 		FB5E398F62C2D993AD1FD643 /* Pods_AppExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDFED0C77907CAE4ECFCBB7 /* Pods_AppExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +76,9 @@
 		A893D68322192E9C0097C487 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A893D6872219BB800097C487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/Experience.json; sourceTree = "<group>"; };
 		A893D6892219BB830097C487 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-MX"; path = "es-MX.lproj/Experience.json"; sourceTree = "<group>"; };
+		A893D68C221AC64C0097C487 /* Experience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
+		A893D68E221AC8E00097C487 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		A893D690221AFFBA0097C487 /* ExperienceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				A893D66C221821C50097C487 /* Extensions */,
+				A893D690221AFFBA0097C487 /* ExperienceManager.swift */,
 				A893D676221823A60097C487 /* StyleGuide.swift */,
 			);
 			path = Library;
@@ -197,6 +204,7 @@
 		A893D63E2217FF470097C487 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A893D68C221AC64C0097C487 /* Experience.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,6 +227,7 @@
 		A893D66C221821C50097C487 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A893D68E221AC8E00097C487 /* Date+Extension.swift */,
 				A893D66D221821D60097C487 /* UILabel+Extension.swift */,
 				A893D679221825E70097C487 /* UIColor+Extension.swift */,
 			);
@@ -397,6 +406,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AppExample/Pods-AppExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Marshal/Marshal.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -408,6 +418,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Marshal.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -451,9 +462,12 @@
 				A893D66E221821D60097C487 /* UILabel+Extension.swift in Sources */,
 				A893D66922180C480097C487 /* TableHeaderView.swift in Sources */,
 				A893D60A2217CE300097C487 /* AppDelegate.swift in Sources */,
+				A893D68D221AC64C0097C487 /* Experience.swift in Sources */,
 				A893D67A221825E70097C487 /* UIColor+Extension.swift in Sources */,
+				A893D68F221AC8E00097C487 /* Date+Extension.swift in Sources */,
 				A893D677221823A60097C487 /* StyleGuide.swift in Sources */,
 				A893D63B2217FF020097C487 /* WelcomeViewController.swift in Sources */,
+				A893D691221AFFBA0097C487 /* ExperienceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
