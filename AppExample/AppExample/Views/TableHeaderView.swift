@@ -61,8 +61,8 @@ class TableHeaderView: UIView {
         contentView.addSubview(photoImageView)
         photoImageView.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
-            make.top.equalToSuperview().inset(100)
-            make.size.equalTo(120)
+            make.top.equalToSuperview().inset(100).priority(910)
+            make.size.equalTo(120).priority(900)
         }
         
         whiteBackground.snp.makeConstraints { (make) in
@@ -86,8 +86,9 @@ class TableHeaderView: UIView {
         contentView.addSubview(labelsStackView)
         labelsStackView.snp.makeConstraints { (make) in
             make.top.equalTo(photoImageView.snp.bottom).offset(2)
-            make.bottom.equalToSuperview().inset(16).priority(900)
+            make.bottom.equalToSuperview().inset(16).priority(500)
             make.right.left.equalToSuperview().inset(10)
+            make.height.greaterThanOrEqualTo(1)
         }
     }
     
