@@ -10,6 +10,7 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var blurredBackground: UIImageView!
     private var headerView: TableHeaderView!
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -60,5 +61,12 @@ extension WelcomeViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = UITableViewCell()
         cell.backgroundColor = .white
         return cell
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        var percentageScrolled = scrollView.contentOffset.y / (headerView.frame.height / 3)
+        percentageScrolled = min(1, percentageScrolled)
+        percentageScrolled = max(0, percentageScrolled)
+        blurredBackground.alpha = percentageScrolled
     }
 }

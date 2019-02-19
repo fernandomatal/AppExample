@@ -37,6 +37,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Jrv-vw-9cA">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blurredBg" translatesAutoresizingMaskIntoConstraints="NO" id="IE1-FD-1YH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ek-rc-Eaq">
                                 <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -55,28 +58,34 @@
                             <constraint firstItem="pfk-oq-Iga" firstAttribute="trailing" secondItem="7Ek-rc-Eaq" secondAttribute="trailing" id="1aw-GP-VEW"/>
                             <constraint firstItem="Jrv-vw-9cA" firstAttribute="top" secondItem="81d-BC-t1j" secondAttribute="top" id="ECA-Dc-LfG"/>
                             <constraint firstItem="7Ek-rc-Eaq" firstAttribute="height" secondItem="81d-BC-t1j" secondAttribute="height" multiplier="0.5" id="FnM-uu-AB3"/>
+                            <constraint firstItem="IE1-FD-1YH" firstAttribute="leading" secondItem="Jrv-vw-9cA" secondAttribute="leading" id="LZI-LF-G1C"/>
+                            <constraint firstItem="IE1-FD-1YH" firstAttribute="bottom" secondItem="Jrv-vw-9cA" secondAttribute="bottom" id="NV3-Cj-4Tb"/>
                             <constraint firstItem="Jrv-vw-9cA" firstAttribute="leading" secondItem="pfk-oq-Iga" secondAttribute="leading" id="Tyq-NZ-uGm"/>
                             <constraint firstItem="pfk-oq-Iga" firstAttribute="bottom" secondItem="qFA-yZ-Fw1" secondAttribute="bottom" id="WWE-iy-Pdu"/>
                             <constraint firstItem="Jrv-vw-9cA" firstAttribute="trailing" secondItem="pfk-oq-Iga" secondAttribute="trailing" id="WkJ-O8-ER1"/>
                             <constraint firstItem="pfk-oq-Iga" firstAttribute="bottom" secondItem="7Ek-rc-Eaq" secondAttribute="bottom" id="aPn-hk-SlB"/>
+                            <constraint firstItem="IE1-FD-1YH" firstAttribute="trailing" secondItem="Jrv-vw-9cA" secondAttribute="trailing" id="akf-ZY-npS"/>
                             <constraint firstItem="7Ek-rc-Eaq" firstAttribute="leading" secondItem="pfk-oq-Iga" secondAttribute="leading" id="dhC-7W-D27"/>
                             <constraint firstItem="qFA-yZ-Fw1" firstAttribute="leading" secondItem="pfk-oq-Iga" secondAttribute="leading" id="gYj-v8-mXm"/>
                             <constraint firstItem="pfk-oq-Iga" firstAttribute="trailing" secondItem="qFA-yZ-Fw1" secondAttribute="trailing" id="kET-KP-Esy"/>
+                            <constraint firstItem="IE1-FD-1YH" firstAttribute="top" secondItem="Jrv-vw-9cA" secondAttribute="top" id="mvj-HX-MAv"/>
                             <constraint firstItem="qFA-yZ-Fw1" firstAttribute="top" secondItem="pfk-oq-Iga" secondAttribute="top" id="oD0-ad-kE9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pfk-oq-Iga"/>
                     </view>
                     <navigationItem key="navigationItem" id="JaA-v8-Aid"/>
                     <connections>
+                        <outlet property="blurredBackground" destination="IE1-FD-1YH" id="WY6-hU-xzh"/>
                         <outlet property="tableView" destination="qFA-yZ-Fw1" id="xBI-KY-j7l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Tz-9O-Xjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="846.85212298682279" y="64.453125"/>
+            <point key="canvasLocation" x="845.60000000000002" y="64.31784107946028"/>
         </scene>
     </scenes>
     <resources>
         <image name="Background" width="1500" height="724"/>
+        <image name="blurredBg" width="360" height="173.75999450683594"/>
     </resources>
 </document>
