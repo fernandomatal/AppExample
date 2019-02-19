@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.8.1)
+  - Marshal (1.2.7)
   - Realm (3.13.1):
     - Realm/Headers (= 3.13.1)
   - Realm/Headers (3.13.1)
@@ -12,6 +13,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Marshal
   - Realm
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
@@ -20,6 +22,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Marshal
     - Realm
     - RxAtomic
     - RxCocoa
@@ -28,12 +31,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Marshal: ef480864a6af10a63f67be7e55bb5d8fe67a16d9
   Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
   RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
   RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
   RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 789ddba4a054f02613bcc0332dd5f5cf4fe039b5
+PODFILE CHECKSUM: 9a162bce33ee3d1c8190415347d15c408a433d79
 
 COCOAPODS: 1.6.0

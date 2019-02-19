@@ -3,6 +3,7 @@ platform :ios, '12.1'
 target 'AppExample' do
   use_frameworks!
   pod 'Alamofire'
+  pod 'Marshal'
   pod 'Realm'
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'
