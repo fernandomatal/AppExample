@@ -69,6 +69,13 @@ extension WelcomeViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        if let segue = tableData[indexPath.row].segue {
+            performSegue(withIdentifier: segue.rawValue, sender: tableData[indexPath.row])
+        }
+    }
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         var percentageScrolled = scrollView.contentOffset.y / (headerView.frame.height / 3)
         percentageScrolled = min(1, percentageScrolled)
