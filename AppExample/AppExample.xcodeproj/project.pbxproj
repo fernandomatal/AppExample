@@ -26,6 +26,7 @@
 		A893D68D221AC64C0097C487 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D68C221AC64C0097C487 /* Experience.swift */; };
 		A893D68F221AC8E00097C487 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D68E221AC8E00097C487 /* Date+Extension.swift */; };
 		A893D691221AFFBA0097C487 /* ExperienceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D690221AFFBA0097C487 /* ExperienceManager.swift */; };
+		A893D693221C4F0D0097C487 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D692221C4F0D0097C487 /* Segue.swift */; };
 		FB5E398F62C2D993AD1FD643 /* Pods_AppExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDFED0C77907CAE4ECFCBB7 /* Pods_AppExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		A893D68C221AC64C0097C487 /* Experience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
 		A893D68E221AC8E00097C487 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		A893D690221AFFBA0097C487 /* ExperienceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceManager.swift; sourceTree = "<group>"; };
+		A893D692221C4F0D0097C487 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 				A893D66C221821C50097C487 /* Extensions */,
 				A893D690221AFFBA0097C487 /* ExperienceManager.swift */,
 				A893D676221823A60097C487 /* StyleGuide.swift */,
+				A893D692221C4F0D0097C487 /* Segue.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				A893D66E221821D60097C487 /* UILabel+Extension.swift in Sources */,
 				A893D66922180C480097C487 /* TableHeaderView.swift in Sources */,
 				A893D60A2217CE300097C487 /* AppDelegate.swift in Sources */,
+				A893D693221C4F0D0097C487 /* Segue.swift in Sources */,
 				A893D68D221AC64C0097C487 /* Experience.swift in Sources */,
 				A893D67A221825E70097C487 /* UIColor+Extension.swift in Sources */,
 				A893D68F221AC8E00097C487 /* Date+Extension.swift in Sources */,
