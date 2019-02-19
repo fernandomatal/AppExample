@@ -9,9 +9,13 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
+    fileprivate let cellIdentifier = "WelcomeCell"
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var blurredBackground: UIImageView!
     private var headerView: TableHeaderView!
+    
+    fileprivate let tableData: [TableData] = TableData.sectionsOrdered()
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return internalPreferredStatusBarStyle
@@ -54,12 +58,14 @@ extension WelcomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return tableData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)!
         cell.backgroundColor = .white
+        cell.textLabel?.font = UIFont.Raleway.regular.withSize(16)
+        cell.textLabel?.text = tableData[indexPath.row].localizedTitle
         return cell
     }
     
@@ -68,5 +74,39 @@ extension WelcomeViewController: UITableViewDataSource, UITableViewDelegate {
         percentageScrolled = min(1, percentageScrolled)
         percentageScrolled = max(0, percentageScrolled)
         blurredBackground.alpha = percentageScrolled
+    }
+}
+
+extension WelcomeViewController {
+    fileprivate enum TableData {
+        case experience
+        case aboutMe
+        case realm
+        case afNetworking
+        case rxSwift
+        case contact
+        case acknowledgments
+        
+        var localizedTitle: String {
+            switch self {
+            case .experience:
+                return NSLocalizedString("Experience", comment: "")
+            default:
+                return ""
+            }
+        }
+        
+        var segue: Segue? {
+            switch self {
+            case .experience:
+                return .showExperience
+            default:
+                return nil
+            }
+        }
+        
+        static func sectionsOrdered() -> [TableData] {
+            return [.experience, .aboutMe, .realm, .afNetworking, .rxSwift, .contact, .acknowledgments]
+        }
     }
 }
