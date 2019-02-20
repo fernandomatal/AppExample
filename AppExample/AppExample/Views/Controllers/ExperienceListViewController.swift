@@ -13,18 +13,26 @@ class ExperienceListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    fileprivate let experienceList: [Experience] = ExperienceManager.shared.experiences
+    fileprivate let experienceList: [Experience] = ExperienceManager.shared.experiences.sorted(by: { $0.joinedAt < $1.joinedAt })
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        tableView.registerClass(nib: CellNib.TableView.experienceCell)
+        
+        title = NSLocalizedString("Experience", comment: "")
+        configureTableView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    private func configureTableView() {
+        tableView.registerClass(nib: CellNib.TableView.experienceCell)
+        tableView.estimatedRowHeight = 90
+        tableView.rowHeight = 90
+        tableView.tableFooterView = UIView()
     }
 }
 
@@ -39,6 +47,13 @@ extension ExperienceListViewController: UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! ExperienceCell
+        cell.configureWith(experience: experienceList[indexPath.row])
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
