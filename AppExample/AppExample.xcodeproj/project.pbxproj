@@ -27,6 +27,9 @@
 		A893D68F221AC8E00097C487 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D68E221AC8E00097C487 /* Date+Extension.swift */; };
 		A893D691221AFFBA0097C487 /* ExperienceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D690221AFFBA0097C487 /* ExperienceManager.swift */; };
 		A893D693221C4F0D0097C487 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D692221C4F0D0097C487 /* Segue.swift */; };
+		A893D695221CD6FE0097C487 /* ExperienceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D694221CD6FE0097C487 /* ExperienceListViewController.swift */; };
+		A893D697221CD81A0097C487 /* ExperienceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D696221CD81A0097C487 /* ExperienceCell.swift */; };
+		A893D699221CD8560097C487 /* CellNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D698221CD8560097C487 /* CellNib.swift */; };
 		FB5E398F62C2D993AD1FD643 /* Pods_AppExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDFED0C77907CAE4ECFCBB7 /* Pods_AppExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +84,9 @@
 		A893D68E221AC8E00097C487 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		A893D690221AFFBA0097C487 /* ExperienceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceManager.swift; sourceTree = "<group>"; };
 		A893D692221C4F0D0097C487 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
+		A893D694221CD6FE0097C487 /* ExperienceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceListViewController.swift; sourceTree = "<group>"; };
+		A893D696221CD81A0097C487 /* ExperienceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceCell.swift; sourceTree = "<group>"; };
+		A893D698221CD8560097C487 /* CellNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellNib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +206,7 @@
 				A893D690221AFFBA0097C487 /* ExperienceManager.swift */,
 				A893D676221823A60097C487 /* StyleGuide.swift */,
 				A893D692221C4F0D0097C487 /* Segue.swift */,
+				A893D698221CD8560097C487 /* CellNib.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -215,6 +222,7 @@
 		A893D63F2217FF520097C487 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A893D694221CD6FE0097C487 /* ExperienceListViewController.swift */,
 				A893D63A2217FF020097C487 /* WelcomeViewController.swift */,
 			);
 			path = Controllers;
@@ -223,6 +231,7 @@
 		A893D6402217FF690097C487 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				A893D696221CD81A0097C487 /* ExperienceCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -465,13 +474,16 @@
 				A893D66E221821D60097C487 /* UILabel+Extension.swift in Sources */,
 				A893D66922180C480097C487 /* TableHeaderView.swift in Sources */,
 				A893D60A2217CE300097C487 /* AppDelegate.swift in Sources */,
+				A893D699221CD8560097C487 /* CellNib.swift in Sources */,
 				A893D693221C4F0D0097C487 /* Segue.swift in Sources */,
 				A893D68D221AC64C0097C487 /* Experience.swift in Sources */,
 				A893D67A221825E70097C487 /* UIColor+Extension.swift in Sources */,
 				A893D68F221AC8E00097C487 /* Date+Extension.swift in Sources */,
 				A893D677221823A60097C487 /* StyleGuide.swift in Sources */,
+				A893D695221CD6FE0097C487 /* ExperienceListViewController.swift in Sources */,
 				A893D63B2217FF020097C487 /* WelcomeViewController.swift in Sources */,
 				A893D691221AFFBA0097C487 /* ExperienceManager.swift in Sources */,
+				A893D697221CD81A0097C487 /* ExperienceCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

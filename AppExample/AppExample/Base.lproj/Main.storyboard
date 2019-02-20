@@ -95,20 +95,39 @@
             </objects>
             <point key="canvasLocation" x="845.60000000000002" y="64.31784107946028"/>
         </scene>
-        <!--View Controller-->
+        <!--Experience List View Controller-->
         <scene sceneID="9ze-81-ksp">
             <objects>
-                <viewController id="kZW-pe-ppL" sceneMemberID="viewController">
+                <viewController id="kZW-pe-ppL" customClass="ExperienceListViewController" customModule="AppExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qMF-P2-vZn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nhy-c7-zr0">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="kZW-pe-ppL" id="ozN-bz-U0J"/>
+                                    <outlet property="delegate" destination="kZW-pe-ppL" id="j5f-3e-oI6"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Uz-po-edg" firstAttribute="bottom" secondItem="Nhy-c7-zr0" secondAttribute="bottom" id="AUh-3i-jAh"/>
+                            <constraint firstItem="Nhy-c7-zr0" firstAttribute="top" secondItem="1Uz-po-edg" secondAttribute="top" id="PJu-0L-ONO"/>
+                            <constraint firstItem="Nhy-c7-zr0" firstAttribute="leading" secondItem="1Uz-po-edg" secondAttribute="leading" id="QCV-tt-wg2"/>
+                            <constraint firstItem="1Uz-po-edg" firstAttribute="trailing" secondItem="Nhy-c7-zr0" secondAttribute="trailing" id="gis-bL-nGr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1Uz-po-edg"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Nhy-c7-zr0" id="hJE-fz-LOA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eq1-d2-68K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1750" y="64"/>
+            <point key="canvasLocation" x="1749.5999999999999" y="63.418290854572717"/>
         </scene>
     </scenes>
     <resources>

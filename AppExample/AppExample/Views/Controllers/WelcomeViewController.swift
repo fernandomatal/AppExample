@@ -35,9 +35,14 @@ class WelcomeViewController: UIViewController {
     
     private func createUI() {
         internalPreferredStatusBarStyle = .lightContent
-        navigationController?.setNavigationBarHidden(true, animated: false)
         headerView = TableHeaderView()
         tableView.tableHeaderView = headerView
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     override func viewWillLayoutSubviews() {
