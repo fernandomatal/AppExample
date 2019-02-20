@@ -134,4 +134,5 @@
         <image name="Background" width="1500" height="724"/>
         <image name="blurredBg" width="360" height="173.75999450683594"/>
     </resources>
+    <color key="tintColor" red="0.34486740215296863" green="0.37868870446836889" blue="0.39368914256846244" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
