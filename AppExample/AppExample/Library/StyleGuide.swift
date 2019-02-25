@@ -28,4 +28,8 @@ extension UIColor {
     static var aeFlatGrey: UIColor {
         return UIColor(hex: "#253536")
     }
+    
+    static var aeDarkerGrey: UIColor {
+        return UIColor(hex: "#404040")
+    }
 }
