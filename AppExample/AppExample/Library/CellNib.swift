@@ -11,11 +11,14 @@ import UIKit
 public struct CellNib {
     public enum TableView: String {
         case experienceCell
+        case iconTextCell
         
         var NibClass: AnyClass? {
             switch self {
             case .experienceCell:
                 return ExperienceCell.self
+            case .iconTextCell:
+                return IconTextCell.self
             default:
                 return nil
             }
