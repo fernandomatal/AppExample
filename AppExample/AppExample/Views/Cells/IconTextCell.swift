@@ -12,8 +12,8 @@ class IconTextCell: UITableViewCell {
 
     private var cellIcon: UIImageView!
     private var labelsStackView: UIStackView!
-    private var cellTitle: UILabel!
-    private var cellText: UILabel!
+    var cellTitle: UILabel!
+    var cellText: UILabel!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -35,8 +35,9 @@ class IconTextCell: UITableViewCell {
         cellIcon.tintColor = UIColor.aeDarkerGrey
         contentView.addSubview(cellIcon)
         cellIcon.snp.makeConstraints { (make) in
-            make.left.top.equalToSuperview().inset(8)
-            make.size.equalTo(20)
+            make.left.equalToSuperview().inset(16)
+            make.top.equalToSuperview().inset(24)
+            make.size.equalTo(25)
         }
         
         cellTitle = UILabel()
@@ -49,23 +50,47 @@ class IconTextCell: UITableViewCell {
         labelsStackView.distribution = .equalSpacing
         labelsStackView.axis = .vertical
         labelsStackView.alignment = .leading
+        labelsStackView.spacing = 12
         contentView.addSubview(labelsStackView)
         labelsStackView.snp.makeConstraints { (make) in
             make.top.equalTo(cellIcon)
-            make.left.equalTo(cellIcon.snp.right).offset(12)
-            make.right.bottom.equalToSuperview().inset(8).priority(900)
+            make.left.equalTo(cellIcon.snp.right).offset(8)
+            make.right.bottom.equalToSuperview().inset(24).priority(900)
         }
     }
     
     private func bindStyles() {
-        cellTitle.font = UIFont.Raleway.bold.withSize(20)
-        cellText.font = UIFont.Raleway.regular.withSize(14)
+        cellTitle.font = UIFont.Raleway.bold.withSize(24)
+        cellText.configureWith(font: UIFont.Raleway.regular.withSize(16), color: UIColor.aeFlatGrey)
     }
     
-    func configureWith(iconName: String, title: String?, details: String?) {
-        cellIcon.image = UIImage(named: iconName)
+    func configureWith(iconName: String?, title: String?, details: String?) {
+        cellIcon.image = UIImage(named: iconName ?? "")
+        cellIcon.isHidden = iconName == nil
         cellTitle.text = title
+        cellTitle.isHidden = title == nil
         cellText.text = details
+        cellText.isHidden = details == nil
         layoutIfNeeded()
+    }
+    
+    func configureWith(iconName: String?, title: String?, bullets: [String]) {
+        cellIcon.image = UIImage(named: iconName ?? "")
+        cellTitle.text = title
+        let bulletsString = bullets.enumerated().reduce("", { $1.offset != 0 ? ($0 + "\n• " + $1.element) : $0 + "• " + $1.element })
+        self.cellText.text = bulletsString
+        layoutIfNeeded()
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        cellIcon.image = nil
+        cellIcon.isHidden = false
+        cellTitle.text = nil
+        cellTitle.isHidden = false
+        cellText.text = nil
+        cellText.isHidden = false
+        accessoryType = .none
+        selectionStyle = .default
     }
 }
