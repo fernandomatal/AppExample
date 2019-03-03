@@ -123,11 +123,46 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="Nhy-c7-zr0" id="hJE-fz-LOA"/>
+                        <segue destination="oS1-q9-Wfi" kind="show" identifier="ShowExperienceDetail" id="QC9-SN-Ggx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eq1-d2-68K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1749.5999999999999" y="63.418290854572717"/>
+        </scene>
+        <!--Experience Detail View Controller-->
+        <scene sceneID="JFi-ah-ntl">
+            <objects>
+                <viewController id="oS1-q9-Wfi" customClass="ExperienceDetailViewController" customModule="AppExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pAj-x1-0do">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="daL-mb-7Mb">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="oS1-q9-Wfi" id="dkp-eA-1le"/>
+                                    <outlet property="delegate" destination="oS1-q9-Wfi" id="7Fi-2w-nQl"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eO0-jc-u5u" firstAttribute="trailing" secondItem="daL-mb-7Mb" secondAttribute="trailing" id="Rgb-uu-X7p"/>
+                            <constraint firstItem="daL-mb-7Mb" firstAttribute="leading" secondItem="eO0-jc-u5u" secondAttribute="leading" id="aXl-t6-ngW"/>
+                            <constraint firstItem="eO0-jc-u5u" firstAttribute="bottom" secondItem="daL-mb-7Mb" secondAttribute="bottom" id="gLb-Jz-kOq"/>
+                            <constraint firstItem="daL-mb-7Mb" firstAttribute="top" secondItem="eO0-jc-u5u" secondAttribute="top" id="j5d-aZ-cxd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eO0-jc-u5u"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="daL-mb-7Mb" id="sdv-kx-hy8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zn9-oP-TTM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2560.8000000000002" y="62.518740629685162"/>
         </scene>
     </scenes>
     <resources>
