@@ -13,7 +13,7 @@ class ExperienceListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    fileprivate let experienceList: [Experience] = ExperienceManager.shared.experiences.sorted(by: { $0.joinedAt < $1.joinedAt })
+    fileprivate let experienceList: [Experience] = ExperienceManager.shared.experiences.sorted(by: { $0.joinedAt > $1.joinedAt })
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +33,13 @@ class ExperienceListViewController: UIViewController {
         tableView.estimatedRowHeight = 90
         tableView.rowHeight = 90
         tableView.tableFooterView = UIView()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Segue.showExperienceDetail.rawValue, let selectedIndex = sender as? Int {
+            let detailVC = segue.destination as! ExperienceDetailViewController
+            detailVC.configureWith(experience: experienceList[selectedIndex])
+        }
     }
 }
 
@@ -55,5 +62,6 @@ extension ExperienceListViewController: UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: Segue.showExperienceDetail.rawValue, sender: indexPath.row)
     }
 }

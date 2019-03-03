@@ -4,7 +4,7 @@
      "name" : "Imagination",
      "logo" : "ImagLogo",
      "role" : "Digital Developer",
-     "joinedAt" : "2018-07-25T00:00:00+0000",
+     "joinedAt" : "2017-07-25T00:00:00+0000",
      "current" : true,
      "location" : "Shanghai, China",
      "mainSkills" : [
@@ -54,9 +54,9 @@
      "logo" : "ReignLogo",
      "role" : "iOS Developer",
      "joinedAt" : "2015-11-30T00:00:00+0000",
-     "leftAt" : "2018-07-21T00:00:00+0000",
+     "leftAt" : "2017-07-21T00:00:00+0000",
      "current" : false,
-     "location" : "Remote/Shanghai, China",
+     "location" : "Remote; Shanghai, China",
      "mainSkills" : [
           "Swift 3",
           "iOS Development",

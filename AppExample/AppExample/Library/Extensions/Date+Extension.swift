@@ -23,8 +23,7 @@ extension Date : ValueType {
     
     static func fromISO8601String(_ string: String) -> Date? {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"
-        let updatedAtStr = "2016-06-05T16:56:57.019+01:00"
-        return dateFormatter.date(from: updatedAtStr)
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZ"
+        return dateFormatter.date(from: string)
     }
 }

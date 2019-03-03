@@ -30,6 +30,9 @@
 		A893D695221CD6FE0097C487 /* ExperienceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D694221CD6FE0097C487 /* ExperienceListViewController.swift */; };
 		A893D697221CD81A0097C487 /* ExperienceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D696221CD81A0097C487 /* ExperienceCell.swift */; };
 		A893D699221CD8560097C487 /* CellNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D698221CD8560097C487 /* CellNib.swift */; };
+		A893D69B221F82130097C487 /* ExperienceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D69A221F82130097C487 /* ExperienceDetailViewController.swift */; };
+		A893D69D2220F4330097C487 /* IconTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D69C2220F4330097C487 /* IconTextCell.swift */; };
+		A893D69F2226188B0097C487 /* ExperienceTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D69E2226188B0097C487 /* ExperienceTitleCell.swift */; };
 		FB5E398F62C2D993AD1FD643 /* Pods_AppExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDFED0C77907CAE4ECFCBB7 /* Pods_AppExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +90,9 @@
 		A893D694221CD6FE0097C487 /* ExperienceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceListViewController.swift; sourceTree = "<group>"; };
 		A893D696221CD81A0097C487 /* ExperienceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceCell.swift; sourceTree = "<group>"; };
 		A893D698221CD8560097C487 /* CellNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellNib.swift; sourceTree = "<group>"; };
+		A893D69A221F82130097C487 /* ExperienceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailViewController.swift; sourceTree = "<group>"; };
+		A893D69C2220F4330097C487 /* IconTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextCell.swift; sourceTree = "<group>"; };
+		A893D69E2226188B0097C487 /* ExperienceTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceTitleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +228,7 @@
 		A893D63F2217FF520097C487 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A893D69A221F82130097C487 /* ExperienceDetailViewController.swift */,
 				A893D694221CD6FE0097C487 /* ExperienceListViewController.swift */,
 				A893D63A2217FF020097C487 /* WelcomeViewController.swift */,
 			);
@@ -232,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				A893D696221CD81A0097C487 /* ExperienceCell.swift */,
+				A893D69E2226188B0097C487 /* ExperienceTitleCell.swift */,
+				A893D69C2220F4330097C487 /* IconTextCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -482,8 +491,11 @@
 				A893D677221823A60097C487 /* StyleGuide.swift in Sources */,
 				A893D695221CD6FE0097C487 /* ExperienceListViewController.swift in Sources */,
 				A893D63B2217FF020097C487 /* WelcomeViewController.swift in Sources */,
+				A893D69D2220F4330097C487 /* IconTextCell.swift in Sources */,
 				A893D691221AFFBA0097C487 /* ExperienceManager.swift in Sources */,
 				A893D697221CD81A0097C487 /* ExperienceCell.swift in Sources */,
+				A893D69F2226188B0097C487 /* ExperienceTitleCell.swift in Sources */,
+				A893D69B221F82130097C487 /* ExperienceDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,6 +693,7 @@
 			baseConfigurationReference = A009D82A41DB2D8DF2C01529 /* Pods-AppExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 863HXP9EN3;
 				INFOPLIST_FILE = AppExample/Info.plist;
@@ -690,6 +703,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mx.fernandomata.AppExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -700,6 +714,7 @@
 			baseConfigurationReference = 9AA06F618E58290D7BA97134 /* Pods-AppExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 863HXP9EN3;
 				INFOPLIST_FILE = AppExample/Info.plist;
@@ -709,6 +724,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mx.fernandomata.AppExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
