@@ -33,6 +33,7 @@
 		A893D69B221F82130097C487 /* ExperienceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D69A221F82130097C487 /* ExperienceDetailViewController.swift */; };
 		A893D69D2220F4330097C487 /* IconTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D69C2220F4330097C487 /* IconTextCell.swift */; };
 		A893D69F2226188B0097C487 /* ExperienceTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893D69E2226188B0097C487 /* ExperienceTitleCell.swift */; };
+		A8E7C22522336C590087D05B /* AppDeveloped.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7C22422336C590087D05B /* AppDeveloped.swift */; };
 		FB5E398F62C2D993AD1FD643 /* Pods_AppExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FDFED0C77907CAE4ECFCBB7 /* Pods_AppExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,7 @@
 		A893D69A221F82130097C487 /* ExperienceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailViewController.swift; sourceTree = "<group>"; };
 		A893D69C2220F4330097C487 /* IconTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextCell.swift; sourceTree = "<group>"; };
 		A893D69E2226188B0097C487 /* ExperienceTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceTitleCell.swift; sourceTree = "<group>"; };
+		A8E7C22422336C590087D05B /* AppDeveloped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDeveloped.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 		A893D63E2217FF470097C487 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A8E7C22422336C590087D05B /* AppDeveloped.swift */,
 				A893D68C221AC64C0097C487 /* Experience.swift */,
 			);
 			path = Models;
@@ -488,6 +491,7 @@
 				A893D68D221AC64C0097C487 /* Experience.swift in Sources */,
 				A893D67A221825E70097C487 /* UIColor+Extension.swift in Sources */,
 				A893D68F221AC8E00097C487 /* Date+Extension.swift in Sources */,
+				A8E7C22522336C590087D05B /* AppDeveloped.swift in Sources */,
 				A893D677221823A60097C487 /* StyleGuide.swift in Sources */,
 				A893D695221CD6FE0097C487 /* ExperienceListViewController.swift in Sources */,
 				A893D63B2217FF020097C487 /* WelcomeViewController.swift in Sources */,
