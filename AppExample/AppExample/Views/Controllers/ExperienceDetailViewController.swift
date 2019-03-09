@@ -14,7 +14,7 @@ class ExperienceDetailViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    fileprivate let viewLayout: [Section] = Section.ordered
+    fileprivate var viewLayout: [Section] = Section.ordered
     
     fileprivate var experience: Experience? {
         didSet {
@@ -46,6 +46,9 @@ class ExperienceDetailViewController: UIViewController {
     
     func configureWith(experience: Experience) {
         self.experience = experience
+        if experience.appsDeveloped.count == 0 {
+            self.viewLayout.removeAll(where: { $0 == .appsDeveloped })
+        }
     }
     
     fileprivate enum Section {
