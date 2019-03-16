@@ -9,6 +9,24 @@
 import UIKit
 
 public struct CellNib {
+    public enum CollectionView: String {
+        case appDevelopedCell
+        
+        var NibClass: AnyClass? {
+            switch self {
+            default:
+                return nil
+            }
+        }
+        
+        var NibName: String? {
+            switch self {
+            case .appDevelopedCell:
+                return String(describing: AppDevelopedCell.self)
+            }
+        }
+    }
+    
     public enum TableView: String {
         case experienceCell
         case experienceTitleCell
@@ -22,19 +40,35 @@ public struct CellNib {
                 return ExperienceTitleCell.self
             case .iconTextCell:
                 return IconTextCell.self
+            }
+        }
+        
+        var NibName: String? {
+            switch self {
             default:
                 return nil
             }
         }
+        
     }
 }
 
 extension UITableView {
     public func register(nib: CellNib.TableView) {
-        self.register(UINib(nibName: nib.rawValue, bundle: nil), forCellReuseIdentifier: nib.rawValue)
+        if let nibName = nib.NibName {
+            self.register(UINib(nibName: nibName, bundle: nil), forCellReuseIdentifier: nib.rawValue)
+        } else {
+            self.register(nib.NibClass, forCellReuseIdentifier: nib.rawValue)
+        }
     }
-    
-    public func registerClass(nib: CellNib.TableView) {
-        self.register(nib.NibClass, forCellReuseIdentifier: nib.rawValue)
+}
+
+extension UICollectionView {
+    public func register(nib: CellNib.CollectionView) {
+        if let nibName = nib.NibName {
+            self.register(UINib(nibName: nibName, bundle: nil), forCellWithReuseIdentifier: nib.rawValue)
+        } else {
+            self.register(nib.NibClass, forCellWithReuseIdentifier: nib.rawValue)
+        }
     }
 }
