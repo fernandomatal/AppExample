@@ -14,7 +14,7 @@ class ExperienceDetailViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    fileprivate let viewLayout: [Section] = Section.ordered
+    fileprivate var viewLayout: [Section] = Section.ordered
     
     fileprivate var experience: Experience? {
         didSet {
@@ -32,8 +32,8 @@ class ExperienceDetailViewController: UIViewController {
         tableView.tableFooterView = UIView()
         tableView.estimatedRowHeight = 50
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.registerClass(nib: CellNib.TableView.iconTextCell)
-        tableView.registerClass(nib: CellNib.TableView.experienceTitleCell)
+        tableView.register(nib: CellNib.TableView.iconTextCell)
+        tableView.register(nib: CellNib.TableView.experienceTitleCell)
     }
     
     private func renderExperience() {
@@ -46,6 +46,20 @@ class ExperienceDetailViewController: UIViewController {
     
     func configureWith(experience: Experience) {
         self.experience = experience
+        if experience.appsDeveloped.count == 0 {
+            self.viewLayout.removeAll(where: { $0 == .appsDeveloped })
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case Segue.showApps.rawValue:
+            if let nextVC = segue.destination as? AppsDevelopedViewController, let apps = experience?.appsDeveloped {
+                nextVC.configureWith(appsDeveloped: apps)
+            }
+        default:
+            return
+        }
     }
     
     fileprivate enum Section {
@@ -78,6 +92,15 @@ class ExperienceDetailViewController: UIViewController {
                 return NSLocalizedString("AppsDeveloped", comment: "")
             case .description:
                 return NSLocalizedString("Description", comment: "")
+            default:
+                return nil
+            }
+        }
+        
+        var segue: Segue? {
+            switch self {
+            case .appsDeveloped:
+                return Segue.showApps
             default:
                 return nil
             }
@@ -152,6 +175,10 @@ extension ExperienceDetailViewController: UITableViewDataSource, UITableViewDele
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        if let segue = viewLayout[indexPath.row].segue {
+            performSegue(withIdentifier: segue.rawValue, sender: nil)
+        }
     }
 }
 

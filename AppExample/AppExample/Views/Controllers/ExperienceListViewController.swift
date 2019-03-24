@@ -29,7 +29,7 @@ class ExperienceListViewController: UIViewController {
     }
     
     private func configureTableView() {
-        tableView.registerClass(nib: CellNib.TableView.experienceCell)
+        tableView.register(nib: CellNib.TableView.experienceCell)
         tableView.estimatedRowHeight = 90
         tableView.rowHeight = 90
         tableView.tableFooterView = UIView()
