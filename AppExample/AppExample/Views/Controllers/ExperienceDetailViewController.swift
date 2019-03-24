@@ -32,8 +32,8 @@ class ExperienceDetailViewController: UIViewController {
         tableView.tableFooterView = UIView()
         tableView.estimatedRowHeight = 50
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.registerClass(nib: CellNib.TableView.iconTextCell)
-        tableView.registerClass(nib: CellNib.TableView.experienceTitleCell)
+        tableView.register(nib: CellNib.TableView.iconTextCell)
+        tableView.register(nib: CellNib.TableView.experienceTitleCell)
     }
     
     private func renderExperience() {
