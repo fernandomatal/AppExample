@@ -51,6 +51,17 @@ class ExperienceDetailViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case Segue.showApps.rawValue:
+            if let nextVC = segue.destination as? AppsDevelopedViewController, let apps = experience?.appsDeveloped {
+                nextVC.configureWith(appsDeveloped: apps)
+            }
+        default:
+            return
+        }
+    }
+    
     fileprivate enum Section {
         case title
         case skills
@@ -81,6 +92,15 @@ class ExperienceDetailViewController: UIViewController {
                 return NSLocalizedString("AppsDeveloped", comment: "")
             case .description:
                 return NSLocalizedString("Description", comment: "")
+            default:
+                return nil
+            }
+        }
+        
+        var segue: Segue? {
+            switch self {
+            case .appsDeveloped:
+                return Segue.showApps
             default:
                 return nil
             }
@@ -155,6 +175,10 @@ extension ExperienceDetailViewController: UITableViewDataSource, UITableViewDele
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        if let segue = viewLayout[indexPath.row].segue {
+            performSegue(withIdentifier: segue.rawValue, sender: nil)
+        }
     }
 }
 
