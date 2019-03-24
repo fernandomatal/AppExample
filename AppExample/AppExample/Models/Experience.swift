@@ -19,6 +19,7 @@ class Experience: Unmarshaling {
     var location: String
     var mainSkills: [String]
     var description: String
+    var appsDeveloped: [AppDeveloped]
     
     required init(object: MarshaledObject) throws {
         name = try object.value(for: Keys.name.rawValue)
@@ -30,6 +31,7 @@ class Experience: Unmarshaling {
         location = try object.value(for: Keys.location.rawValue)
         mainSkills = try object.value(for: Keys.mainSkills.rawValue)
         description = try object.value(for: Keys.description.rawValue)
+        appsDeveloped = try object.value(for: Keys.appsDeveloped.rawValue)
     }
     
     enum Keys: String {
@@ -42,5 +44,6 @@ class Experience: Unmarshaling {
         case location = "location"
         case mainSkills = "mainSkills"
         case description = "description"
+        case appsDeveloped = "appsDeveloped"
     }
 }
