@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "[OS]"; ObjectID = "1mT-Wd-3UZ"; */
+"1mT-Wd-3UZ.text" = "[OS]";
+
+/* Class = "UILabel"; text = "[Language]"; ObjectID = "6B5-CM-jTa"; */
+"6B5-CM-jTa.text" = "[Language]";
+
+/* Class = "UILabel"; text = "Description text..."; ObjectID = "9uT-xw-ude"; */
+"9uT-xw-ude.text" = "Description text...";
+
+/* Class = "UILabel"; text = "Description text...\nMore text..."; ObjectID = "JIs-mZ-xhW"; */
+"JIs-mZ-xhW.text" = "Description text...\nMore text...";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "L3K-1f-zG6"; */
+"L3K-1f-zG6.text" = "Descripción";
+
+/* Class = "UILabel"; text = "Technologies"; ObjectID = "cr0-EY-iqe"; */
+"cr0-EY-iqe.text" = "Tecnologías";
+
+/* Class = "UILabel"; text = "[Name]"; ObjectID = "dag-tK-su8"; */
+"dag-tK-su8.text" = "[Name]";
+
+/* Class = "UILabel"; text = "[Platform]"; ObjectID = "tZg-yZ-g0w"; */
+"tZg-yZ-g0w.text" = "[Platform]";
+
+/* Class = "UILabel"; text = "[Users"; ObjectID = "zH9-Pu-Cc9"; */
+"zH9-Pu-Cc9.text" = "[Users";

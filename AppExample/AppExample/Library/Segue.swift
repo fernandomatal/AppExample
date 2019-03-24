@@ -9,6 +9,7 @@
 import Foundation
 
 enum Segue: String {
+    case showApps = "ShowApps"
     case showExperience = "ShowExperience"
     case showExperienceDetail = "ShowExperienceDetail"
 }
