@@ -4,6 +4,8 @@ I created this app to show my skills as iOS Developer, also because most of the 
 
 The app is a simple example with my personal and professional information, I use native UI controls and animations for all the design.
 
+![Screenshots](https://github.com/fernandomatal/AppExample/blob/master/Resources/Screenshots.jpg?raw=true)
+
 I also use the following libraries to show my experience with them:
 
 * **[Cocoapods](http://cocoapods.org)**. To manage all the third party libraries used in the app.
